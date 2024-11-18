@@ -17,26 +17,47 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
     <style>
       body{
-        background-color:hsl(0, 0%, 81%);
+        min-height: 100vh;
+        background-color:hsl(210, 46%, 95%);
+        font-size: 13px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+      }
+
+      .col{
+        border-radius: 10px;
+        padding: 2.5em;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="row gap-4 py-5">
+        <div class="col-xl col-12 pt-0 pb-0 ps-0 pe-3">
       <div class="row gap-4">
-        <div class="col">
-      <div class="row gap-4">
-    <div class="col" style="background-color: hsl(263, 55%, 52%);">
-    <div>Daniel Clifford Verified Graduate</div>
-    <p>
+    <div class="col col-xl col-12 text-white" style="background-color: hsl(263, 55%, 52%);">
+    <figure class="d-flex gap-3" style="width: max-content;">
+      <img class="rounded-circle" src="images/image-daniel.jpg" alt="Verified Graduate Daniel">
+      <figcaption class="align-self-center">
+        <div>Daniel Clifford</div>
+        <div class="opacity-50">Verified Graduate</div>
+    </figcaption>
+    </figure>
+    
+    <p class="lead">
     I received a job offer mid-course, and the
     subjects I learned were current, if not more so, in the company I joined. I
     honestly feel I got every penny’s worth. </p>
-    <p>
+    <p class="opacity-75">
     “ I was an EMT for many years
     before I joined the bootcamp. I’ve been looking to make a transition and
     have heard some people who had an amazing experience here. I signed up for
@@ -46,31 +67,46 @@
     working as a Software Engineer at a VR startup. ” 
   </p>
     </div>
-    <div class="col col-4" style="background-color: hsl(217, 19%, 35%);">
-      <div>Jonathan Walters Verified Graduate</div>
-    <p>The team was very supportive and kept me motivated</p>
+    <div class="col col-xl-4 col-12 text-white" style="background-color: hsl(217, 19%, 35%);">
+      <figure class="d-flex gap-3">
+        <img class="rounded-circle" src="images/image-jonathan.jpg" alt="Verified Graduate">
+        <figcaption class="align-self-center"><div>Jonathan Walters</div>
+        <div class="opacity-50">Verified Graduate</div></figcaption>
+    </figure>
+    <p class="lead">The team was very supportive and kept me motivated</p>
     
-    <p>“ I started as a
+    <p class="opacity-75">“ I started as a
     total newbie with virtually no coding skills. I now work as a mobile
     engineer for a big company. This was one of the best investments I’ve made
     in myself. ”</p>
   </div>
 </div>
 <div class="row gap-4 mt-4">
-    <div class="col col-4" style="background-color:hsl(0, 0%, 100%);">
-    <div>Jeanette Harmon Verified Graduate </div>
-    <p>An overall wonderful and
+    <div class="col col-xl-4 col-12 shadow" style="background-color:hsl(0, 0%, 100%); color:hsl(217, 19%, 35%);">
+    <figure class="d-flex gap-3">
+      <img class="rounded-circle" src="images/image-jeanette.jpg" alt="Verified Graduate Jeanette">
+      <figcaption class="align-self-center">
+      <div>Jeanette Harmon</div> <div class="opacity-50">Verified Graduate</div>
+    </figcaption>
+    </figure>
+    <p class="lead">An overall wonderful and
     rewarding experience</p> 
-    <p>“ Thank you for the wonderful experience! I now have a
+    <p class="opacity-75">“ Thank you for the wonderful experience! I now have a
     job I really enjoy, and make a good living while doing something I love. ”</p>
     </div>
-    <div class="col" style="background-color: hsl(219, 29%, 14%);">
-      <div>Patrick Abrams Verified Graduate </div>
-      <p>
+    <div class="col col-xl col-12 text-white" style="background-color: hsl(219, 29%, 14%);">
+      <figure class="d-flex gap-3">
+        <img class="rounded-circle" src="images/image-patrick.jpg" alt="Verified Graduate Patrick">
+        <figcaption class="align-self-center">
+          <div>Patrick Abrams</div>
+          <div class="opacity-50">Verified Graduate</div>
+        </figcaption>
+      </figure>
+      <p class="lead">
     Awesome teaching support from TAs who did
     the bootcamp themselves. Getting guidance from them and learning from their
     experiences was easy.</p>
-    <p>“ The staff seem genuinely concerned about my progress
+    <p class="opacity-75" >“ The staff seem genuinely concerned about my progress
     which I find really refreshing. The program gave me the confidence necessary
     to be able to go out in the world and present myself as a capable junior
     developer. The standard is above the rest. You will get the personal
@@ -79,11 +115,17 @@
     </div>
   </div>
 </div>
-    <div class="col col-4" style="background-color:hsl(0, 0%, 100%);">
-    <div>Kira Whittle Verified Graduate </div>
-    <p>Such a life-changing experience. Highly
+    <div class="col col-xl-3 col-12 shadow" style="background-color:hsl(0, 0%, 100%); color: hsl(217, 19%, 35%);">
+    <figure class="d-flex gap-3">
+      <img class="rounded-circle" src="images/image-kira.jpg" alt="Verified Graduate Kira">
+      <figcaption class="align-self-center">
+        <div>Kira Whittle</div>
+        <div class="opacity-50">Verified Graduate</div>
+      </figcaption>
+    </figure>
+    <p class="lead">Such a life-changing experience. Highly
     recommended! </p>
-    <p>“ Before joining the bootcamp, I’ve never written a line of
+    <p class="opacity-75">“ Before joining the bootcamp, I’ve never written a line of
     code. I needed some structure from professionals who can help me learn
     programming step by step. I was encouraged to enroll by a former student of
     theirs who can only say wonderful things about the program. The entire
